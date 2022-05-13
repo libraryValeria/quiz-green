@@ -5,9 +5,14 @@ var questions = [
   answer: "oat",
 },
 {
-  question: "What ...?",
-  options: [":)", ":]", ":D"],
-  answer: ":)",
+  question: "What city penalizes their citizens for not recycling? ",
+  options: ["New York City", "Los Angeles", "Denver"],
+  answer: "New York City",
+}
+{
+  question: "What suncreen ingredient(s) is harmful to sea life?",
+  options: ["Oxybenzone", "Ocintoxate", "Galactoarabina"],
+  answer: "Oxybenzone and Ocintoxate",
 }
 ];
 
