@@ -1,7 +1,7 @@
 var questions = [
   {
   question: "What is the most sustainable milk alternative?",
-  options: ["coconut", "oat", "soy"],
+  options: ["coconut", "oat", "almond"],
   answer: "oat",
 },
 {

@@ -14,30 +14,24 @@
     />
   </head>
   <body>
-    <div>
+    <div id="start-screen">
       <h2>Are you and mother nature besties?</h2>
       <p>Let's find out how earth friendly you reALLy are.</p>
-      <button type="button" class="btn btn-success btn-lg" onclick="begin();">
+      <button type="button" id="start-button" class="btn btn-success btn-lg" onclick="begin()">
         Begin!
       </button>
     </div>
 
-    <div id="question-display">
-      <h3 id="question"></h3>
-      <div id="options">
-        <div>
-          <button type="button" class="btn btn-outline-success">Success</button>
-        </div>
-        <div>
-          <button type="button" class="btn btn-outline-success">Success</button>
-        </div>
-        <div>
-          <button type="button" class="btn btn-outline-success">Success</button>
-        </div>
+    <div id="questions">
+      <h3 id="question-title"></h3>
+      <div id="options" class="options">
+        <button id="option-a" type="button" class="btn btn-outline-success"></button>
+        <button id="option-b" type="button" class="btn btn-outline-success"></button>
+        <button id="option-c" type="button" class="btn btn-outline-success"></button>
       </div>
     </div>
 
-    <script src="script.js"></script>
-    <script src="questions.js"></script>
+    <script src="./questions.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
