@@ -36,9 +36,11 @@ function getOptions() {
   optionA.innerHTML = optionAy;
   optionB.innerHTML = optionBe;
   optionC.innerHTML = optionCe;
+
+  correctAnswer();
 }
 
-function questionTwo(){
+function questionTwo() {
   var questionTitle = document.querySelector("h3");
   var questionAsked = questions[1].question;
   questionTitle.innerHTML = questionAsked;
@@ -46,7 +48,7 @@ function questionTwo(){
   optionsTwo();
 }
 
-function optionsTwo(){
+function optionsTwo() {
   var optionA = document.getElementById("option-a");
   var optionB = document.getElementById("option-b");
   var optionC = document.getElementById("option-c");
@@ -62,3 +64,14 @@ function optionsTwo(){
 // hide last question
 // get next question
 // display next options
+
+//if the correct answer is selected 'oat' -- then user is shown a fun fact
+// user collects a green heart
+function correctAnswer() {
+  var funFactEl = document.getElementById("fun-fact");
+  var answerOne = questions[0].answer;
+
+  console.log(answerOne);
+}
+// if the incorrect answer is selected -- then user is show fun fact
+// user collects a broken heart

@@ -7,12 +7,17 @@ var questions = [
 {
   question: "What city penalizes their citizens for not recycling? ",
   options: ["New York City", "Los Angeles", "Denver"],
-  answer: "New York City",
-}
+  answer: options[1],
+},
 {
-  question: "What suncreen ingredient(s) is harmful to sea life?",
+  question: "What suncreen ingredient(s) is NOT considered harmful to sea life?",
   options: ["Oxybenzone", "Ocintoxate", "Galactoarabina"],
-  answer: "Oxybenzone and Ocintoxate",
+  answer: options[3],
+},
+{
+  question: "?",
+  options: ["a", "b", "c"],
+  answer: "",
 }
 ];
 
