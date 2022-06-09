@@ -1,3 +1,7 @@
-button{
+.container-fluid{
+    margin-top: 5%;
+}
+#options{
     display:none;
 }
+

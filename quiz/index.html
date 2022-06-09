@@ -10,26 +10,34 @@
 
   </head>
   <body>
-    <div id="start-screen">
-      <h2>Are you and mother nature besties?</h2>
-      <p>Let's find out how earth friendly you reALLy are.</p>
-      <button type="button" id="start-button" class="btn btn-success btn-lg" onclick="begin()">
-        Begin!
-      </button>
-    </div>
-
-    <div id="questions">
-      <h3 id="question-title"></h3>
-      <div id="options" class="options">
-        <button id="option-a" type="button" class="btn btn-outline-success" onclick="questionTwo()"></button>
-        <button id="option-b" type="button" class="btn btn-outline-success"data-bs-toggle="collapse" data-bs-target="#fun-fact"aria-expanded="false" aria-controls="fun-fact"onclick="correctAnswer()"></button>
-        <button id="option-c" type="button" class="btn btn-outline-success"onclick="questionTwo()"></button>
+    <div class="container-fluid">
+      <div id="start-screen">
+        <h2>Are you and mother nature besties?</h2>
+        <p>Let's find out how earth friendly you reALLy are.</p>
+        <button type="button" id="start-button" class="btn btn-success btn-lg" onclick="begin()">
+          Begin!
+        </button>
       </div>
-      <div class="collapse" id="fun-fact">
-        <div class="card card-body">
-          howdy partner ;)
-          <button type="button" class="btn btn-outline-success"> 💚 OR 💔</button>
-        </div>
+    </div>
+<div class="container-fluid">
+  <div id="questions">
+    <h3 id="question-title"></h3>
+    <div id="options" class="options">
+      <button id="option-a" type="input" class="btn btn-outline-success" onclick="questionTwo()"></button>
+      <button id="option-b" type="input" class="btn btn-outline-success"data-bs-toggle="collapse" data-bs-target="#fun-fact"aria-expanded="false" aria-controls="fun-fact"onclick="correctAnswer()"></button>
+      <button id="option-c" type="input" class="btn btn-outline-success"onclick="questionTwo()"></button>
+    </div>
+</div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-9">
+            <div class="collapse" id="fun-fact">
+              <div class="card card-body">
+                <button type="button" class="btn btn-outline-success" id="heart-btn">💚 OR 💔</button>
+              </div>
+            </div>
+          </div>
+        </div> 
       </div>
     </div>
     

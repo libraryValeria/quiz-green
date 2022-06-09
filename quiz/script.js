@@ -25,6 +25,10 @@ function getQuestion() {
 }
 // get options function
 function getOptions() {
+ 
+  var options = document.getElementById("options");
+  options.style.display = "block";
+
   var optionA = document.getElementById("option-a");
   var optionB = document.getElementById("option-b");
   var optionC = document.getElementById("option-c");
@@ -37,6 +41,7 @@ function getOptions() {
   optionB.innerHTML = optionBe;
   optionC.innerHTML = optionCe;
 
+ 
   correctAnswer();
 }
 
@@ -69,9 +74,13 @@ function optionsTwo() {
 // user collects a green heart
 function correctAnswer() {
   var funFactEl = document.getElementById("fun-fact");
-  var answerOne = questions[0].answer;
-
-  console.log(answerOne);
+  
+if (questions[0].answer){
+  funFactEl.innerHTML = questions[0].fact;
+} else {
+  console.log("deadass 🤪 ");
+}
+  
 }
 // if the incorrect answer is selected -- then user is show fun fact
 // user collects a broken heart

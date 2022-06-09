@@ -2,8 +2,11 @@ var questions = [
   {
   question: "What is the most sustainable milk alternative?",
   options: ["coconut", "oat", "almond"],
-  answer: "oat",
-  fact: "Is whole milk okay? You may be asked every morning at your coffee stop. Though your digestive track may be chill with lactose, the 1050 liters of water to produce cow's milk doesn't sit right with ya bestie Earth. On the other hand oat milk requires 48 liters of water...(Columbia Climate School MA, 2021)"
+  answer: function(){
+    return this.options[1];
+    // do I need to call this here or in script.js function
+  },
+  fact: "'Is whole milk okay?' Though your digestive track may be chill with lactose, the 1050 liters of water to produce cow's milk doesn't sit right with ya bestie Earth. On the other hand oat milk requires 48 liters of water...(Columbia Climate School MA, 2021) Collect your 💚 baby G- "
 },
 {
   question: "What city penalizes their citizens for not recycling? ",
