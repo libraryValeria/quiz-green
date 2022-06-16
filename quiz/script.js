@@ -80,7 +80,14 @@ if (questions[0].answer){
 } else {
   console.log("deadass 🤪 ");
 }
-  
+}
+
+function heartBtn(){
+  var greenHeart = document.getElementById("green-heart");
+
+  options.style.display = "none";
+  greenHeart.style.display = "block"; 
+  greenHeart.innerHTML = heart[0];
 }
 // if the incorrect answer is selected -- then user is show fun fact
 // user collects a broken heart

@@ -1,7 +1,11 @@
 .container-fluid{
     margin-top: 5%;
 }
+
 #options{
+    display:none;
+}
+#green-heart{
     display:none;
 }
 
