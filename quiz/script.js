@@ -54,6 +54,9 @@ function questionTwo() {
 }
 
 function optionsTwo() {
+  var options = document.getElementById("options");
+  options.style.display = "block";
+  
   var optionA = document.getElementById("option-a");
   var optionB = document.getElementById("option-b");
   var optionC = document.getElementById("option-c");
@@ -65,6 +68,16 @@ function optionsTwo() {
   optionA.innerHTML = optionAy;
   optionB.innerHTML = optionBe;
   optionC.innerHTML = optionCe;
+
+  var funFactEl = document.getElementById("fun-fact");
+  var greenHeart = document.getElementById("green-heart");
+  var answerTitle = document.getElementById("answer-title");
+  
+  funFactEl.style.display="none";
+  greenHeart.style.display="none";
+  answerTitle.style.display="none";
+
+  
 }
 // hide last question
 // get next question
@@ -84,10 +97,17 @@ if (questions[0].answer){
 
 function heartBtn(){
   var greenHeart = document.getElementById("green-heart");
+  var answerTitle = document.getElementById("answer-title");
+  
+  answerTitle.innerHTML = questions[0].answerTitle;
 
   options.style.display = "none";
+
   greenHeart.style.display = "block"; 
   greenHeart.innerHTML = heart[0];
 }
+
+
+
 // if the incorrect answer is selected -- then user is show fun fact
 // user collects a broken heart

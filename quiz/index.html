@@ -22,16 +22,16 @@
 <div class="container-fluid">
   <div id="questions">
     <h3 id="question-title"></h3>
+    <h2 id="answer-title" class="text-success"></h2>
     <div id="options" class="options">
       <button id="option-a" type="input" class="btn btn-outline-success" onclick="questionTwo()"></button>
-      <button id="option-b" type="input" class="btn btn-outline-success"data-bs-toggle="collapse" data-bs-target="#fun-fact"aria-expanded="false" aria-controls="fun-fact"onclick="correctAnswer()"></button>
+      <button id="option-b" type="input" class="btn btn-outline-success"data-bs-toggle="collapse" data-bs-target="#fun-fact"aria-expanded="false" aria-controls="fun-fact"onclick="correctAnswer(); heartBtn();"></button>
       <button id="option-c" type="input" class="btn btn-outline-success"onclick="questionTwo()"></button>
     </div>
 </div>
       <div class="container-fluid">
         <div class="row">
-          <div class="col"></div>
-          <div class="col-10">
+          <div class="col-7">
             <div class="collapse card text-bg-success p-3" id="fun-fact">
               <div class="card card-body">
                 <div class="row">
@@ -45,8 +45,11 @@
           </div>
         </div> 
       </div>
-      <div>
-        <button id="green-heart" type="input" class="btn btn-outline-success"onclick="correctAnswer();"></button>
+      <div class="container-fluid">
+        <div class="col"></div>
+        <div class="col-9">
+          <button id="green-heart" type="input" class="btn btn-outline-success" onclick="questionTwo();"></button>
+        </div>
       </div>
     <div style="height: 75px"></div>
 
